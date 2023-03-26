@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Sigmar+One);
 @import url(https://fonts.googleapis.com/css?family=Bowlby+One+SC);
 body {
-  background-color: black;
+  background-color: #261579;
 }
 * {
   padding: 0;
@@ -33,7 +33,7 @@ body {
   font: 1em/1.6 sans-serif;
 }
 header {
-  background-color: #333;
+  background-color: #544BFB;
   height: 100vh;
   position: relative;
 }
@@ -127,7 +127,7 @@ main {
   font-size: 9vw;
   font-family: "ff-nuvo-sc-web-pro", sans-serif;
   font-weight: bold;
-  color: #333;
+  color: #261579;
 }
 .skills-sec {
   position: relative;
@@ -218,11 +218,11 @@ footer .contact-link {
 }
 footer .contact-link:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #261579;
 }
 .awesome {
   border-color: #333;
-  color: #fff;
+  color: #261579;
   background-image: linear-gradient(45deg, #333 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
