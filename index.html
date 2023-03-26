@@ -1,6 +1,7 @@
 <head>
-	<link rel="stylesheet" type="text/scss" href="/Users/gabriele/Documents/Developing👩🏼‍💻/portfolio/styleSheet2.scss" />
 	<link rel="stylesheet" type="text/css" href="styleSheets.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Gabriele Bracciali</title>
 </head>
 <script src="Jav.js"></script>
 <div class="outer">
@@ -13,7 +14,12 @@
 		<header>
 			<div class="container-fluid clearfix">
 				<div class="row">
-					<i class="fa fa-bars nav-toggle" aria-hidden="true"></i>
+					<div class="sidebarNavToggle" id="sidebarGB">
+					</div>
+					<i class="fa fa-bars nav-toggle" id="navtoggleGB" onclick="navToggleAction(), sidebarAction(), hiRemove(), backgroundIndexShow(), showCloseIcon()" aria-hidden="true"></i>
+					<div class="closeContainer" id="closeContainerID" onclick="hideCloseIcon()">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+					</div>
 					<nav role="navigation">
 						<i class="fa fa-times nav-toggle" aria-hidden="true"></i>
 						<ul class="list-unstyled" id="nav">
@@ -36,7 +42,32 @@
 						</ul>
 					</nav>
 				</div>
-				<h1 class="titanic naked">Hi.</h1>
+				<div class="backgroundIndex" id="backgroundIndexID">
+					<div class="indexContainer">
+						<div>
+						<a href="#skills">	<h1 class="teninaMini">
+								Skill
+							</h1></a>
+						</div>
+						<div>
+							<a href="">	<h1 class="teninaMini">
+								Projects
+							</h1></a>
+						</div>
+						<div>
+							<a href="">	<h1 class="teninaMini">
+								Get in Touch
+							</h1></a>
+						</div>
+					</div>
+					<div class="profilePictureContainer">
+						<div class="picture">
+						</div>
+						<div class="pictureLabel"><label>Gabriele</label></div>
+					</div>
+				</div>
+				<h1 class="tenina" id="hiText">Hi.</h1>
+			
 			</div>
 		</header>
 
@@ -58,19 +89,19 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1">
-						<h2>Skills</h2>
+						<h2 id="skills">Skills</h2>
 					</div>
 					<div class="col-xs-8 col-xs-offset-2">
 						<div id="skills">
-							<img class="img-responsive skill toR" src="https://www.dropbox.com/s/ptiub25akn0arv1/js.png?dl=1" alt="js icon" />
-							<img class="img-responsive skill" src="https://www.dropbox.com/s/mg6l07shpizexrm/css3.png?dl=1" alt="css icon" />
-							<img class="img-responsive skill toL" src="https://www.dropbox.com/s/gpnimluvvf99aln/html5.png?dl=1" alt="html icon" />
-							<img src="https://www.dropbox.com/s/imyppai6tbkcy66/bootstrap.png?dl=1" alt="bootstrap icon" class="img-responsive skill toR" />
-							<img src="https://www.dropbox.com/s/qbirqpen1rap569/jquery.png?dl=1" alt="jquery icon" class="img-responsive skill" />
-							<img src="https://www.dropbox.com/s/3qcvkhy12pmmyy9/gitpng.png?dl=1" alt="git icon" class="img-responsive skill toL" />
-							<img src="https://www.dropbox.com/s/4258cs4sxun3ogs/sass.png?dl=1" alt="sass icon" class="img-responsive skill toR" />
-							<img src="https://www.dropbox.com/s/8k7szo5mjfz7n7g/gulp.png?dl=1" alt="gulp icon" class="img-responsive skill" />
-							<img src="https://www.dropbox.com/s/addcu8z0r6xxrpn/react.png?dl=1" alt="react icon" class="img-responsive skill toL" />
+							<img class="img-responsive skill toR" src="" alt="js icon" />
+							<img class="img-responsive skill" src="" alt="css icon" />
+							<img class="img-responsive skill toL" src="" alt="html icon" />
+							<img src="" alt="bootstrap icon" class="img-responsive skill toR" />
+							<img src="" alt="jquery icon" class="img-responsive skill" />
+							<img src="" alt="git icon" class="img-responsive skill toL" />
+							<img src="" alt="sass icon" class="img-responsive skill toR" />
+							<img src="" alt="gulp icon" class="img-responsive skill" />
+							<img src="" alt="react icon" class="img-responsive skill toL" />
 						</div>
 					</div>
 				</div>
@@ -91,22 +122,22 @@
 					<div class="col-xs-12">
 						<div id="portfolio">
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/BKddGL" target="_blank"><img src="https://www.dropbox.com/s/jlt6wt35u88kqmv/weather.png?dl=1" alt="weather_app" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="weather_app" class="img-responsive" /></a>
 							</div>
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/oxqzLx" target="_blank"><img src="https://www.dropbox.com/s/pmqf1y6q1zf5win/pomodoro.png?dl=1" alt="pomodoto_timer" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="pomodoto_timer" class="img-responsive" /></a>
 							</div>
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/NNXdxw" target="_blank"><img src="https://www.dropbox.com/s/rb7jycwtwxtkt7d/calculator.png?dl=1" alt="calculator" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="calculator" class="img-responsive" /></a>
 							</div>
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/oxdYgW" target="_blank"><img src="https://www.dropbox.com/s/8hpioow2c68c97w/simon.png?dl=1" alt="simon_game" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="simon_game" class="img-responsive" /></a>
 							</div>
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/yOzemP" target="_blank"><img src="https://www.dropbox.com/s/f49kdhi98ygoqif/quote.png?dl=1" alt="quote_machine" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="quote_machine" class="img-responsive" /></a>
 							</div>
 							<div class="project">
-								<a href="https://codepen.io/dagman/pen/jqZbje" target="_blank"><img src="https://www.dropbox.com/s/canzxmzo98vd1bj/tictactoe.png?dl=1" alt="tic_tac_toe" class="img-responsive" /></a>
+								<a href="" target="_blank"><img src="" alt="tic_tac_toe" class="img-responsive" /></a>
 							</div>
 						</div>
 					</div>

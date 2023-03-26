@@ -20,6 +20,7 @@ body {
 a:hover, a:focus, a:visited {
   color: #fff;
   text-decoration: none;
+  transition: text-decoration 1s;
 }
 :root {
   font-size: calc(1vw + 1vh + .5vmin);
@@ -37,7 +38,7 @@ header {
   height: 100vh;
   position: relative;
 }
-.titanic {
+.tenina {
   font-size: 144px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
@@ -47,6 +48,17 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+.teninaMini{
+  font-size: 84px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  opacity: 1;
+  color: #fff;
+}
+h1.teninaMini:hover {
+  transition: 350ms;
+  opacity: 50%;
 }
 nav {
   padding-top: 30px;
@@ -83,6 +95,117 @@ nav {
   top: 5%;
   left: 5%;
   cursor: pointer;
+}
+.navToggleActionFade{
+animation-name: scaleDown;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+@keyframes scaleDown{
+0% {transform: scale(1.0);}
+80%{ opacity: 0%;}
+100% {transform: scale(0.0);}
+}
+.sidebarNavToggle.toolbarSideScreen{
+animation-name: toolbarSliding;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+@keyframes toolbarSliding{
+  0% {transform:translateX(0%);}
+100% {transform:translateX(-100%);}
+}
+.sidebarNavToggle{
+  background-image: linear-gradient(to right, #792615,#261579);
+  height: 100%;
+
+}
+.hiHidingtext{
+  animation-name: hiHidingAnimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes hiHidingAnimation{
+  0% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+.backgroundIndex{
+  opacity: 0%;
+}
+.indexContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.backgroundIndexShowing{
+  animation-name: backgroundIndexAnimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes backgroundIndexAnimation{
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.closeContainer{
+  opacity: 0%;
+  
+  width: 20px;
+  height: 23px;
+  fill: white;
+}
+.closeContainerActive{
+  animation-name: closeContainerAnimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+@keyframes closeContainerAnimation{
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.profilePictureContainer{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 5%;
+  right: 5%;
+
+}
+.picture{
+  background-image: url("/Users/gabriele/Documents/Developing👩🏼‍💻/portfolio/gabriele_new.jpg");
+  background-size: contain;
+  height: 100%;
+  border-radius: 100px;
+}
+.pictureLabel{
+  opacity: 0%;
+  background: linear-gradient(0deg, black, transparent);
+  position: inherit;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  align-items: center;
+  transition: 500ms;
+}
+.profilePictureContainer:hover  .pictureLabel{
+opacity: 100%;
+}
+.pictureLabel > label {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
 }
 .fa-arrow-circle-up {
   position: fixed;
