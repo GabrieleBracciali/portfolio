@@ -180,7 +180,7 @@ animation-fill-mode: forwards;
 
 }
 .picture{
-  background-image: url("/Users/gabriele/Documents/Developing👩🏼‍💻/portfolio/gabriele_new.jpg");
+  background-image: url("https://media.licdn.com/dms/image/C4E03AQEeF_ZDL0Zjvw/profile-displayphoto-shrink_400_400/0/1634737678665?e=1685577600&v=beta&t=-NzvoG2C-Q0Srx9NBWD2SmJ7iyyWDeicncTm6NyKIfQ");
   background-size: contain;
   height: 100%;
   border-radius: 100px;
@@ -275,7 +275,6 @@ h2 {
   width: 32%;
   height: 19vw;
   padding: 15px;
-  opacity: 0;
   transition: all 1s ease-in-out;
 }
 .skill.toR {
