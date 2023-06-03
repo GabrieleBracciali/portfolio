@@ -276,6 +276,9 @@ h2 {
   height: 19vw;
   padding: 15px;
   transition: all 1s ease-in-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
 .skill.toR {
   transform: translateX(-50px);
